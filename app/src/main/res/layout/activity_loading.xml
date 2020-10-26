@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoadingActivity"
+    tools:ignore="HardCodedText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="Autofill">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="26sp"
+            android:text="加载中图片"/>
+
+        <EditText
+            android:id="@+id/wide"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:hint="宽(dp, 默认60dp)"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/high"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:hint="高(dp, 默认60dp)"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/OK"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="22sp"
+            android:text="@string/buttonOK"
+            android:textColor="#FFB74D"
+            android:background="#4FC3F7"/>
+
+    </LinearLayout>
+
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loading"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        app:indicator_color="#4ABAC4"
+        app:indicator="Pacman"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/open"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="显示动画"
+                android:textSize="22sp"
+                android:textColor="#3949AB"
+                android:background="#42BD41"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/close"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="关闭动画"
+                android:textSize="22sp"
+                android:textColor="#3949AB"
+                android:background="#F06292"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

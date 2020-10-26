@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Test Test Test</string>
+
+    <string name="title">TestTitle</string>
+    <string name="menuItem1">title1</string>
+    <string name="menuItem2">title2</string>
+
+    <string name="buttonOK">确定</string>
+    <string name="jump">页面跳转…</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText">
+
+    <!--对TableRow指定width,height无效-->
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="文本One"
+            android:textSize="22sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="文本Two"
+            android:textSize="22sp"
+            android:textColor="@color/black"/>
+
+    </TableRow>
+
+    <TableRow>
+        <!--无width,height指定，默认为wrap_content-->
+        <TextView
+            android:gravity="center"
+            android:text="文本Three"
+            android:textSize="22sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:text="文本Four"
+            android:textSize="22sp"
+            android:textColor="@color/black"/>
+
+    </TableRow>
+
+</TableLayout>

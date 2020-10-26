@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="性格特点"
+        android:textSize="26sp"
+        android:textColor="@color/orange"/>
+    
+    <RadioGroup
+        android:id="@+id/radioGroupOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/cute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可爱"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/radio_group_one"/>
+
+        <RadioButton
+            android:id="@+id/sexy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="性感"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/radio_group_one"/>
+
+        <RadioButton
+            android:id="@+id/soft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="温柔"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/radio_group_one"/>
+
+        <RadioButton
+            android:id="@+id/hasty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="轻率"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/radio_group_one"/>
+
+        <RadioButton
+            android:id="@+id/natural"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="天然"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/radio_group_one"/>
+
+        <RadioButton
+            android:id="@+id/scheming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="腹黑"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/radio_group_one"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="性别"
+        android:textSize="26sp"
+        android:textColor="@color/orange"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/man"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="男性"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:drawableEnd="@drawable/radio_group_one"/>
+
+        <RadioButton
+            android:id="@+id/woman"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="女孩子"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/radio_group_one"/>
+
+        <RadioButton
+            android:id="@+id/unknown"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="不告诉你"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/radio_group_one"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="OK"
+        android:textSize="26sp"
+        android:textColor="@color/orange"
+        android:background="@color/yellow"/>
+
+</LinearLayout>

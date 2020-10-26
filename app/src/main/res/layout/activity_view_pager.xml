@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context=".ViewPagerActivity"
+    tools:ignore="HardcodedText">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.tai.TestTestTest.MyScrollView
+                android:id="@+id/pagerScroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.tai.TestTestTest.MyViewPager
+                            android:id="@+id/testPager"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:id="@+id/pointLinear"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:orientation="horizontal"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textSpilt"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/blue"
+                        android:gravity="center"
+                        android:text="------分割线------"
+                        android:textSize="22sp"
+                        android:textColor="@color/black"/>
+
+                    <com.tai.TestTestTest.TestAutoHeightViewPager
+                        android:id="@+id/autoHeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/blue"
+                        android:gravity="center"
+                        android:text="------分割线------"
+                        android:textSize="22sp"
+                        android:textColor="@color/black"/>
+
+                    <Button
+                        android:id="@+id/addOrRemove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:padding="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/orange"
+                        android:text="添加/移除颜色块"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"/>
+
+                </LinearLayout>
+
+            </com.tai.TestTestTest.MyScrollView>
+
+            <EditText
+                android:id="@+id/viewPagerText"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="#F0FF0F"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:hint="@string/jump"
+                android:inputType="number"
+                android:layout_centerInParent="true"
+                android:layout_alignParentStart="true"
+                tools:ignore="Autofill"/>
+
+            <Button
+                android:id="@+id/viewPagerButton"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/viewPagerText"
+                android:gravity="center"
+                android:text="@string/buttonOK"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:background="#0FFFF0"
+                android:layout_centerInParent="true"
+                android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

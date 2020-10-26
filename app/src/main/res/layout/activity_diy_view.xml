@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DIYViewActivity"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <DiyView.DownloadProgressBar
+            android:id="@+id/myProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:numTextSize="22sp"
+            app:progressBarColor="@color/orange"/>
+
+        <Button
+            android:id="@+id/go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:text="进度开始"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nowValue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <DiyView.ProgressBar2
+                android:id="@+id/testBar2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                app:backgroundColor="@color/blue"
+                app:backgroundAlpha="0.3"
+                app:progressColor="@color/purple"
+                app:progressBlockWidth="2dp"
+                app:showBackground="false"
+                app:outlineWidth2="4dp"
+                app:backgroundCornerRadius="20dp"/>
+
+            <TextView
+                android:id="@+id/maxValue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/inputNow"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="输入数值"
+                android:inputType="numberDecimal"
+                tools:ignore="Autofill"/>
+
+            <Button
+                android:id="@+id/getNow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cyan"
+                android:text="确定"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/inputMax"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:hint="输入最大数值"
+                android:inputType="numberDecimal"
+                tools:ignore="Autofill"/>
+
+            <Button
+                android:id="@+id/getMax"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/cyan"
+                android:text="确定"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:hint="请输入验证码"
+                android:inputType="textNoSuggestions"
+                tools:ignore="Autofill"/>
+
+            <DiyView.ImageCaptcha
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:number="6"
+                app:codeSize="20sp"
+                app:removeChars="01oOIl"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textSize="26sp"
+            android:textColor="@color/orange"
+            android:background="@color/blue"/>
+
+        <DiyView.ProgressBar
+            android:id="@+id/testBar"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            app:cornerRadius="20dp"
+            app:progressScale="0.523"
+            app:textSize="18sp"
+            app:textStrokeWidth="2dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/inputScale"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:hint="输入比例"
+                android:inputType="numberDecimal"
+                tools:ignore="Autofill"/>
+
+            <Button
+                android:id="@+id/getScale"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/purple"
+                android:text="@string/buttonOK"/>
+
+        </LinearLayout>
+
+        <DiyView.WaterWaveRefresh
+            android:id="@+id/waterWave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:waveLength="100dp"
+            app:waveHeight="10dp"/>
+
+        <DiyView.TemplateDiyView
+            android:id="@+id/testView"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

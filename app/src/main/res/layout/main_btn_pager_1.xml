@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <!-- 1 -->
+    <Button
+        android:id="@+id/toWebView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WebView"
+        android:textAllCaps="false"
+        android:textSize="22sp" />
+
+    <!-- 2 -->
+    <Button
+        android:id="@+id/toOneLineText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="单行文本滑动显示"
+        android:textSize="22sp" />
+
+    <!-- 3 -->
+    <Button
+        android:id="@+id/toLayoutList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="布局集合"
+        android:textSize="22sp" />
+
+    <!-- 4 -->
+    <Button
+        android:id="@+id/toDIYView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义View"
+        android:textSize="22sp" />
+
+    <!-- 5 -->
+    <Button
+        android:id="@+id/toNdkTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="安卓NDK测试"
+        android:textSize="22sp" />
+
+    <!-- 6 -->
+    <Button
+        android:id="@+id/toTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试页"
+        android:textSize="22sp" />
+
+    <!-- 20 -->
+</LinearLayout>

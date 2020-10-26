@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".LayoutListActivity"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:padding="10dp"
+        android:background="#29B6F6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Fragment"
+                android:textSize="26sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Android 六大布局\nLinearLayout（略）、RelativeLayout（略）、\nTableLayout、AbsoluteLayout、\nFrameLayout、GirdLayout\n及Fragment和部分控件的测试"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:padding="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/restart"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="重置"
+                android:textSize="22sp"/>
+
+            <Button
+                android:id="@+id/gridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="GirdLayout（网格布局）"
+                android:textAllCaps="false"
+                android:textSize="22sp"/>
+
+            <Button
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="TableLayout（表格布局）"
+                android:textAllCaps="false"
+                android:textSize="22sp"/>
+
+            <Button
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="FrameLayout（帧布局）"
+                android:textAllCaps="false"
+                android:textSize="22sp"/>
+
+            <Button
+                android:id="@+id/absoluteLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="AbsoluteLayout（绝对布局）"
+                android:textAllCaps="false"
+                android:textSize="22sp"/>
+
+            <Button
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="RadioGroup"
+                android:textAllCaps="false"
+                android:textSize="22sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

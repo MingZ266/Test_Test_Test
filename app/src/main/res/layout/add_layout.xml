@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/addLayout">
+
+    <TextView
+        android:id="@+id/blueText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4ABAC4"
+        android:text="加入的文本框"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+</LinearLayout>

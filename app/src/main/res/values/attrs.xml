@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TemplateDiyView">
+    </declare-styleable>
+
+    <declare-styleable name="DownloadProgressBar">
+        <attr name="progressBarColor" format="color"/>
+        <attr name="backgroundBarColor" format="color"/>
+        <attr name="progressBarStrokeWidth" format="dimension"/>
+        <attr name="backgroundBarStrokeWidth" format="dimension"/>
+        <attr name="numTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ImageCaptcha">
+        <attr name="number" format="integer"/>
+        <attr name="codeSize" format="dimension"/>
+        <attr name="removeChars" format="string"/>
+        <attr name="removeNumbers" format="boolean"/>
+        <attr name="removeCapitalLetters" format="boolean"/>
+        <attr name="removeSmallLetter" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressBar2">
+        <attr name="backgroundColor" format="color"/>
+        <attr name="progressColor" format="color"/>
+        <attr name="progressBlockWidth" format="dimension"/>
+        <attr name="progressCornerRadius" format="dimension"/>
+        <attr name="backgroundCornerRadius" format="dimension"/>
+        <attr name="backgroundAlpha" format="float"/>
+        <attr name="outlineWidth2" format="dimension"/>
+        <attr name="showBackground" format="boolean"/>
+        <attr name="showOutline" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressBar">
+        <attr name="barColor" format="color"/>
+        <attr name="outlineWidth" format="dimension"/>
+        <attr name="cornerRadius" format="dimension"/>
+        <attr name="progressScale" format="float"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+        <attr name="textStrokeWidth" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="WaterWaveRefresh">
+        <attr name="waveLength" format="dimension"/>
+        <attr name="waveHeight" format="dimension"/>
+        <attr name="waveColor" format="color"/>
+    </declare-styleable>
+
+</resources>
