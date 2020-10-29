@@ -124,13 +124,18 @@ public class WaterWaveRefresh extends View {
                 rearXDistance = (float) rearXAnimator.getAnimatedValue();
                 frontXDistance = (float) frontXAnimator.getAnimatedValue();
                 waveYDistance = (float) waveYAnimator.getAnimatedValue() * 2.0f;
-                requestLayout();
+                refresh();
             }
         });
     }
 
     public void stopAnimator() {
         animator.cancel();
+    }
+
+    public void refresh() {
+        invalidate();
+        requestLayout();
     }
 
     private int fromDpToPx(float dpValue) {

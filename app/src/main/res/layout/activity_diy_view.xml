@@ -187,6 +187,11 @@
             app:waveLength="100dp"
             app:waveHeight="10dp"/>
 
+        <DiyView.HeadPortraitCut
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+
         <DiyView.TemplateDiyView
             android:id="@+id/testView"
             android:layout_width="300dp"
